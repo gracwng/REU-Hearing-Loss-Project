@@ -1,0 +1,43 @@
+\hypertarget{build__eeg__features_8m}{}\section{/\+Users/safugl/\+Nextcloud/utils/ds-\/nhhi/src/features/build\+\_\+eeg\+\_\+features.m File Reference}
+\label{build__eeg__features_8m}\index{/Users/safugl/Nextcloud/utils/ds-\/nhhi/src/features/build\_eeg\_features.m@{/Users/safugl/Nextcloud/utils/ds-\/nhhi/src/features/build\_eeg\_features.m}}
+
+
+Preprocess E\+EG data from the selective auditory attention experiment.  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{build__eeg__features_8m_a9ce1ed5f15362f756d12503b8a11e2bc}{build\+\_\+eeg\+\_\+features}} (in subid, in pipeline, in bidsdir, in sdir)
+\item 
+\mbox{\Hypertarget{build__eeg__features_8m_a4dfa723b5907c3afaa014da084d547f2}\label{build__eeg__features_8m_a4dfa723b5907c3afaa014da084d547f2}} 
+function {\bfseries io\+\_\+concatenateeegdata} (in subid, in pp, in dat, in bids\+\_\+events, in bids\+\_\+channels, in bidsdir, in ltask)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Preprocess E\+EG data from the selective auditory attention experiment. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em subid} & subject id (1-\/44) \\
+\hline
+{\em pipeline} & the preprocessing pipeline struct for the E\+EG data (see \mbox{\hyperlink{workflows__paper_8m}{workflows\+\_\+paper.\+m}}) \\
+\hline
+{\em bidsdir} & a string indicating the root directory of the B\+I\+Ds folder \\
+\hline
+{\em sdir} & a string indicating where the data is stored \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{build__eeg__features_8m_a9ce1ed5f15362f756d12503b8a11e2bc}\label{build__eeg__features_8m_a9ce1ed5f15362f756d12503b8a11e2bc}} 
+\index{build\_eeg\_features.m@{build\_eeg\_features.m}!build\_eeg\_features@{build\_eeg\_features}}
+\index{build\_eeg\_features@{build\_eeg\_features}!build\_eeg\_features.m@{build\_eeg\_features.m}}
+\subsubsection{\texorpdfstring{build\_eeg\_features()}{build\_eeg\_features()}}
+{\footnotesize\ttfamily function build\+\_\+eeg\+\_\+features (\begin{DoxyParamCaption}\item[{in}]{subid,  }\item[{in}]{pipeline,  }\item[{in}]{bidsdir,  }\item[{in}]{sdir }\end{DoxyParamCaption})}
+
+history 2019/07/06 made several lines more readable.
+
+2019/07/16 major\+: updated to comply with new B\+I\+Ds organization 2019/08/07 made it possible to avoid saving features 

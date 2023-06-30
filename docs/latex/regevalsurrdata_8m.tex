@@ -1,0 +1,49 @@
+\hypertarget{regevalsurrdata_8m}{}\section{/\+Users/safugl/\+Nextcloud/utils/ds-\/nhhi/tools/private/regevalsurrdata.m File Reference}
+\label{regevalsurrdata_8m}\index{/Users/safugl/Nextcloud/utils/ds-\/nhhi/tools/private/regevalsurrdata.m@{/Users/safugl/Nextcloud/utils/ds-\/nhhi/tools/private/regevalsurrdata.m}}
+
+
+Evaluate the goodness of fit of a regression model on phase scrambled data.  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{regevalsurrdata_8m_af4be3a4ac16c9ccf71dac9f22e1e97d6}{regevalsurrdata}} (in xx, in yy, in ww, in np, in gof, in roi)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Evaluate the goodness of fit of a regression model on phase scrambled data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em xx} & regressor matrix of size (time x features) \\
+\hline
+{\em yy} & target matrix of size (time x features) \\
+\hline
+{\em ww} & regression coefficients \\
+\hline
+{\em np} & number of permutations \\
+\hline
+{\em gof} & goodness-\/of-\/fit metric to be considered (default\+: \textquotesingle{}estcorr\textquotesingle{}). \\
+\hline
+{\em roi} & define a number of columns in $<$yy$>$ over which the accuracy is averaged over \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em acc} & goodness of fit (e.\+g. correlation coefficient) $<$ number of permutations x dim$>$ \\
+\hline
+{\em roi} & the number of columns in $<$yy$>$ that the acc was averaged over \\
+\hline
+\end{DoxyRetVals}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{regevalsurrdata_8m_af4be3a4ac16c9ccf71dac9f22e1e97d6}\label{regevalsurrdata_8m_af4be3a4ac16c9ccf71dac9f22e1e97d6}} 
+\index{regevalsurrdata.m@{regevalsurrdata.m}!regevalsurrdata@{regevalsurrdata}}
+\index{regevalsurrdata@{regevalsurrdata}!regevalsurrdata.m@{regevalsurrdata.m}}
+\subsubsection{\texorpdfstring{regevalsurrdata()}{regevalsurrdata()}}
+{\footnotesize\ttfamily function regevalsurrdata (\begin{DoxyParamCaption}\item[{in}]{xx,  }\item[{in}]{yy,  }\item[{in}]{ww,  }\item[{in}]{np,  }\item[{in}]{gof,  }\item[{in}]{roi }\end{DoxyParamCaption})}
+
+history\+: 2019/07/05 included nargin statements 

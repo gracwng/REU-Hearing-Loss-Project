@@ -1,0 +1,39 @@
+\hypertarget{estcorr_8m}{}\section{/\+Users/safugl/\+Nextcloud/utils/ds-\/nhhi/tools/estcorr.m File Reference}
+\label{estcorr_8m}\index{/Users/safugl/Nextcloud/utils/ds-\/nhhi/tools/estcorr.m@{/Users/safugl/Nextcloud/utils/ds-\/nhhi/tools/estcorr.m}}
+
+
+Compute the product-\/moment correlation coefficient column-\/wise between two 2d matrices.  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{estcorr_8m_aed2d2d68c340c55cf84f95e921e50ca7}{estcorr}} (in xx, in yy, in tail)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Compute the product-\/moment correlation coefficient column-\/wise between two 2d matrices. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & is a matrix of dimensions (time x columns) \\
+\hline
+{\em y} & is a matrix of dimensions (time x columns) \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em r} & a vector of product-\/moment correlations \\
+\hline
+\end{DoxyRetVals}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{estcorr_8m_aed2d2d68c340c55cf84f95e921e50ca7}\label{estcorr_8m_aed2d2d68c340c55cf84f95e921e50ca7}} 
+\index{estcorr.m@{estcorr.m}!estcorr@{estcorr}}
+\index{estcorr@{estcorr}!estcorr.m@{estcorr.m}}
+\subsubsection{\texorpdfstring{estcorr()}{estcorr()}}
+{\footnotesize\ttfamily function estcorr (\begin{DoxyParamCaption}\item[{in}]{xx,  }\item[{in}]{yy,  }\item[{in}]{tail }\end{DoxyParamCaption})}
+
+This function is used to compute the product-\/moment correlation coefficient between two matrices. This is done column-\/wise. The computation can be substantially faster than build-\/in Matlab alternatives when x and y has numerous columns 

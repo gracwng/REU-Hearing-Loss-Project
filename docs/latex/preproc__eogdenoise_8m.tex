@@ -1,0 +1,58 @@
+\hypertarget{preproc__eogdenoise_8m}{}\section{/\+Users/safugl/\+Nextcloud/utils/ds-\/nhhi/src/features/func/modules/eeg/private/preproc\+\_\+eogdenoise.m File Reference}
+\label{preproc__eogdenoise_8m}\index{/Users/safugl/Nextcloud/utils/ds-\/nhhi/src/features/func/modules/eeg/private/preproc\_eogdenoise.m@{/Users/safugl/Nextcloud/utils/ds-\/nhhi/src/features/func/modules/eeg/private/preproc\_eogdenoise.m}}
+
+
+Regress out E\+OG artifacts from E\+EG data (stored in Fieldtrip format)  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{preproc__eogdenoise_8m_a4c1a3def61183ed5f63c882cdbc8da1f}{preproc\+\_\+eogdenoise}} (in opts, in dat)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Regress out E\+OG artifacts from E\+EG data (stored in Fieldtrip format) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em opts} & configuration structure \\
+\hline
+{\em opts.\+demean} & a 0/1 flag, 1 = center the data prior to spatial filtering (default), 0 = leave as is \\
+\hline
+{\em opts.\+zthresh} & what threshold do we set for the eog artefact detection? default = 4 \\
+\hline
+{\em opts.\+eogchan} & which eog channels do we here consider? e.\+g. \{\textquotesingle{}E\+OG\textquotesingle{}\} \\
+\hline
+{\em opts.\+pthresh} & set a power ratio threshold that defines how many eigenvectors to retain \\
+\hline
+{\em opts.\+artseg} & this is handy if you want to manually label E\+OG artifacts (which is fairly straightforward). when this field is not empty, Fieldtrip will not be used for E\+OG labelling \\
+\hline
+{\em dat} & a Fieldtrip data structure \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em out} & a structure with relevant fields for denoising (filters and z-\/scoring parameters) \\
+\hline
+{\em dat} & denoised eeg data (in Fieldtrip format) \\
+\hline
+\end{DoxyRetVals}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{preproc__eogdenoise_8m_a4c1a3def61183ed5f63c882cdbc8da1f}\label{preproc__eogdenoise_8m_a4c1a3def61183ed5f63c882cdbc8da1f}} 
+\index{preproc\_eogdenoise.m@{preproc\_eogdenoise.m}!preproc\_eogdenoise@{preproc\_eogdenoise}}
+\index{preproc\_eogdenoise@{preproc\_eogdenoise}!preproc\_eogdenoise.m@{preproc\_eogdenoise.m}}
+\subsubsection{\texorpdfstring{preproc\_eogdenoise()}{preproc\_eogdenoise()}}
+{\footnotesize\ttfamily function preproc\+\_\+eogdenoise (\begin{DoxyParamCaption}\item[{in}]{opts,  }\item[{in}]{dat }\end{DoxyParamCaption})}
+
+history\+: 2019/07/05 major\+: added comments and renamed function. 2019/07/12 major\+: updated demean field to allow for demean = 0
+
+When using this function please cite\+:
+
+Wong, Daniel DE, et al. \char`\"{}\+A comparison of regularization methods in
+forward and backward models for auditory attention decoding.\char`\"{} Frontiers in neuroscience 12 (2018)\+: 531.
+
+de Cheveigné A, Parra LC (2014). "Joint decorrelation, a versatile tool for multichannel data analysis. Neuroimage 98\+:487?505. Available at\+: \href{http://dx.doi.org/10.1016/j.neuroimage.2014.05.068}{\texttt{ http\+://dx.\+doi.\+org/10.\+1016/j.\+neuroimage.\+2014.\+05.\+068}}. 

@@ -1,0 +1,34 @@
+\hypertarget{matlag_8m}{}\section{/\+Users/safugl/\+Nextcloud/utils/ds-\/nhhi/tools/matlag.m File Reference}
+\label{matlag_8m}\index{/Users/safugl/Nextcloud/utils/ds-\/nhhi/tools/matlag.m@{/Users/safugl/Nextcloud/utils/ds-\/nhhi/tools/matlag.m}}
+
+
+Creates a lagged (time-\/shifted) version of a 2d array.  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{matlag_8m_a7eb1e8252f73a607367cac14dd68aba7}{matlag}} (in xx, in lags)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Creates a lagged (time-\/shifted) version of a 2d array. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em xx} & input matrix of size (time xx features) \\
+\hline
+{\em lags} & a vector or a value that contains the time-\/shifts of interest (in samples). Negative lags leads the xx matrix and positive lags the matrix. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{matlag_8m_a7eb1e8252f73a607367cac14dd68aba7}\label{matlag_8m_a7eb1e8252f73a607367cac14dd68aba7}} 
+\index{matlag.m@{matlag.m}!matlag@{matlag}}
+\index{matlag@{matlag}!matlag.m@{matlag.m}}
+\subsubsection{\texorpdfstring{matlag()}{matlag()}}
+{\footnotesize\ttfamily function matlag (\begin{DoxyParamCaption}\item[{in}]{xx,  }\item[{in}]{lags }\end{DoxyParamCaption})}
+
+Please note that this function is not well-\/suited for fitting multidimensional stimulus-\/response for certain types of regularization that enforce smoothness along certain dimensions (e.\+g. Tikhonov regularization or Gaussian Process Priors). Here, it is possible that the model instead will put a constraint on the smoothness across neighbouring channels (for decoding models) or peripheral bands (for spectro-\/temporal receptive field models). 

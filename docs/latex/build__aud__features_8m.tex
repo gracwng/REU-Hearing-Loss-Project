@@ -1,0 +1,74 @@
+\hypertarget{build__aud__features_8m}{}\section{/\+Users/safugl/\+Nextcloud/utils/ds-\/nhhi/src/features/build\+\_\+aud\+\_\+features.m File Reference}
+\label{build__aud__features_8m}\index{/Users/safugl/Nextcloud/utils/ds-\/nhhi/src/features/build\_aud\_features.m@{/Users/safugl/Nextcloud/utils/ds-\/nhhi/src/features/build\_aud\_features.m}}
+
+
+Preprocess audio data from the selective auditory attention experiment.  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{build__aud__features_8m_aaa6031252a6edef7b3c0d69bb2d2ce06}{build\+\_\+aud\+\_\+features}} (in subid, in pipeline, in bidsdir, in sdir, in cameq, in timealigned)
+\item 
+\mbox{\Hypertarget{build__aud__features_8m_a7ecd1b79928ec7bf6b59856513bbe5a3}\label{build__aud__features_8m_a7ecd1b79928ec7bf6b59856513bbe5a3}} 
+function {\bfseries io\+\_\+cat\+\_\+tsv\+\_\+runs} (in subid, in bidsdir, in ltask, in bids\+\_\+events)
+\item 
+\mbox{\Hypertarget{build__aud__features_8m_ae0e6b01825531df34ea7e986c1cff0d1}\label{build__aud__features_8m_ae0e6b01825531df34ea7e986c1cff0d1}} 
+function {\bfseries io\+\_\+extract\+\_\+audio\+\_\+events} (in bids\+\_\+events)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Preprocess audio data from the selective auditory attention experiment. 
+
+This function can be used to preprocess the derived audio features stored in the Zenodo dataset.
+
+
+\begin{DoxyParams}{Parameters}
+{\em subid} & subject id (1-\/44) \\
+\hline
+{\em pipeline} & the preprocessing pipeline struct for the audio (see \mbox{\hyperlink{workflows__paper_8m}{workflows\+\_\+paper.\+m}}) \\
+\hline
+{\em bidsdir} & a string indicating the root directory of the B\+I\+Ds folder \\
+\hline
+{\em sdir} & a string indicating where the data is stored \\
+\hline
+{\em cameq} & \href{with/without CamEQ}{\texttt{ \textquotesingle{}wa\textquotesingle{}/\textquotesingle{}woa\textquotesingle{}/\textquotesingle{}woacontrol\textquotesingle{}}}. \mbox{[}cameq = \textquotesingle{}woa\textquotesingle{} (default)\mbox{]}\+: focus on audio without Cambridge equalization (here obtained via inverse filtering), \mbox{[}cameq = \textquotesingle{}wa\textquotesingle{}\mbox{]}\+: focus on audio with Cambridge amplification, \mbox{[}cameq = \textquotesingle{}woacontrol\textquotesingle{}\mbox{]} = focus on audio without Cambridge equalization (here obtained by loudness matching before Cam\+EQ and leaving out Cam\+EQ) \\
+\hline
+{\em timealigned} & \mbox{[}0/1 (default)\mbox{]}. the scripts contained in $>$src$>$paper and $>$src$>$examples$>$\mbox{\hyperlink{examplescript2_8m}{examplescript2.\+m}} assumes that the audio features of target/masker pairs are aligned in time (this is achieved using a \char`\"{}pp\+\_\+aud\+\_\+toi\+\_\+attention\char`\"{}, please inspect this file). by setting \mbox{[}timealigned=1\mbox{]} the target/masker features are assumed to share a time vector. whenever this is not the case, set \mbox{[}timealigned=0\mbox{]}, in which case the output will contain a time vector both for the target and masker\\
+\hline
+{\em subid} & subject id (e.\+g. 1) \\
+\hline
+{\em pp} & the preprocessing pipeline \\
+\hline
+{\em bidsdir} & root directory of the B\+I\+Ds folder \\
+\hline
+{\em cameq} & \mbox{[}\textquotesingle{}wa\textquotesingle{}/\textquotesingle{}woa\textquotesingle{}/\textquotesingle{}woacontrol\textquotesingle{}\mbox{]} \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{build__aud__features_8m_aaa6031252a6edef7b3c0d69bb2d2ce06}\label{build__aud__features_8m_aaa6031252a6edef7b3c0d69bb2d2ce06}} 
+\index{build\_aud\_features.m@{build\_aud\_features.m}!build\_aud\_features@{build\_aud\_features}}
+\index{build\_aud\_features@{build\_aud\_features}!build\_aud\_features.m@{build\_aud\_features.m}}
+\subsubsection{\texorpdfstring{build\_aud\_features()}{build\_aud\_features()}}
+{\footnotesize\ttfamily function build\+\_\+aud\+\_\+features (\begin{DoxyParamCaption}\item[{in}]{subid,  }\item[{in}]{pipeline,  }\item[{in}]{bidsdir,  }\item[{in}]{sdir,  }\item[{in}]{cameq,  }\item[{in}]{timealigned }\end{DoxyParamCaption})}
+
+
+\begin{DoxyRetVals}{Return values}
+{\em feat} & struct contained derived features \\
+\hline
+{\em feat.\+wavname} & cellstring that points to the raw audio files \\
+\hline
+{\em feat.\+target} & features of target audio streams \\
+\hline
+{\em feat.\+masker} & features of masker audio streams. empty cells will relate to single-\/talker trials (in which cases there were no competing speaker) \\
+\hline
+{\em feat.\+time} & time vectors for each trial. if \mbox{[}timealigned=0\mbox{]} there will be two rows in the cell. the first row will here relate to the target speaker and the second to the masker speaker \\
+\hline
+{\em feat.\+attend\+\_\+left\+\_\+right} & cellstrings indicating whether the target speaker was lateralized to the left or to the right \\
+\hline
+{\em feat.\+single\+\_\+talker\+\_\+two\+\_\+talker} & cellstrings indicating if it was a single-\/talker trial or two-\/talker trial \\
+\hline
+\end{DoxyRetVals}

@@ -1,0 +1,64 @@
+\hypertarget{regevalnestedloopssvdridge_8m}{}\section{/\+Users/safugl/\+Nextcloud/utils/ds-\/nhhi/tools/regevalnestedloopssvdridge.m File Reference}
+\label{regevalnestedloopssvdridge_8m}\index{/Users/safugl/Nextcloud/utils/ds-\/nhhi/tools/regevalnestedloopssvdridge.m@{/Users/safugl/Nextcloud/utils/ds-\/nhhi/tools/regevalnestedloopssvdridge.m}}
+
+
+Fits Ridge regression models using $<$regfitsvdridge$>$ and evaluates the predictive power using nested cross-\/validation procedures.  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{regevalnestedloopssvdridge_8m_aa60514d08979fb9bd10660a62575ac07}\label{regevalnestedloopssvdridge_8m_aa60514d08979fb9bd10660a62575ac07}} 
+function {\bfseries regevalnestedloopssvdridge} (in opts, in xx, in yy)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Fits Ridge regression models using $<$regfitsvdridge$>$ and evaluates the predictive power using nested cross-\/validation procedures. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em opts} & configuration struct \\
+\hline
+{\em opts.\+lambda} & Ridge regularization hyperparameters of interest. Default\+: \mbox{[}10 100 1000\mbox{]} \\
+\hline
+{\em opts.\+znormd} & Should the data be Z-\/scored?. Default\+: 1 (yes). Alternatively set it to 0 (no) \\
+\hline
+{\em opts.\+gof} & What goodness-\/of-\/fit metric is considered? default\+: \textquotesingle{}estcorr\textquotesingle{}. Please note that this is an advanced field and should most often be left as is. \\
+\hline
+{\em opts.\+kouter} & Number of outer folds. Default\+: 10 \\
+\hline
+{\em opts.\+kinner} & Number of inter folds. Default\+: 5 \\
+\hline
+{\em opts.\+storew} & Do you wish to store the model coefficients? Default\+: 0 (no), alternatively set it to 1 (yes) \\
+\hline
+{\em opts.\+phaserand} & a configuration struct for evaluating model performance on surrogate data \\
+\hline
+{\em opts.\+phaserand.\+nperm} & number of times to evaluate goodness-\/of-\/fit on surrogate data for each outer fold\\
+\hline
+{\em opts.\+phaserand.\+roi} & should the goodness-\/of-\/fit be averaged over certain columns in yy? Default was for this project set to a cluster of fronto-\/central electrodes \\
+\hline
+{\em xx} & regressor matrix of size (time x features x trials) \\
+\hline
+{\em yy} & target matrix of size (time x features x trials) \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em vlog} & a cellstruct containing information about model fit and performance \\
+\hline
+{\em vlog\{i\}.\+acci} & model accuracy over each inner loop $<$ number of lambda paramaters x dimensions in yy x inner folds$>$ \\
+\hline
+{\em vlog\{i\}.\+acco} & model accuracy on the test data for outer loop i \\
+\hline
+{\em vlog\{i\}.\+opts} & a structure containing information about $<$opts$>$ and the cross-\/validation splits \\
+\hline
+{\em vlog\{i\}.\+opts.\+phaserand} & a structure containing model accuracies on surrogate data \\
+\hline
+{\em vlog\{i\}.\+opts.\+phaserand.\+accsurr} & model accuracies over all permutations \\
+\hline
+{\em vlog\{i\}.\+opts.\+phaserand.\+roi} & input roi specified. this may however not be fulfilled, in which case it is set to the average over all dimensions in yy \\
+\hline
+{\em vlog\{i\}.\+opts.\+phaserand.\+surroi} & the actual roi considered for the analysis \\
+\hline
+\end{DoxyRetVals}

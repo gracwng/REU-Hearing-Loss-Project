@@ -1,0 +1,234 @@
+This repository contains code for analysis of auditory E\+EG data as described in the paper\+:
+
+Fuglsang,S., Marcher-\/\+Rorsted, J Dau, T. and Hjortkjaer, J (2020). {\itshape Effects of sensorineural hearing loss on cortical synchronization to competing speech during selective attention}. Journal of Neuroscience
+
+The data was collected by Jonatan Marcher-\/\+Rorsted at the Technical University of Denmark in the Hearing Systems Group in 2018. The data are availble at\+: \href{https://doi.org/10.5072/zenodo.463871}{\texttt{ https\+://doi.\+org/10.\+5072/zenodo.\+463871}}
+
+Please see {\ttfamily \mbox{\hyperlink{examplescript1_8m}{src/examples/examplescript1.\+m}}} and {\ttfamily \mbox{\hyperlink{examplescript2_8m}{src/examples/examplescript2.\+m}}} which demonstrates how to define a preprocessing pipeline, preprocess audio/\+E\+EG data and subsequently perform a stimulus-\/response analysis.
+
+To replicate the results from the study, define a variable {\ttfamily bidsdir} that points to the B\+I\+Ds data directory and a variable {\ttfamily sdir} that points to the directory in which the derived data (e.\+g. audio envelopes) will be stored and execute {\ttfamily for subid = 1 \+: 44; runall(subid,bidsdir,sdir); end}. Once this has been done, use {\ttfamily export\+\_\+summaries(sdir,bidsdir)} to export figures and data summaries.
+
+\section*{Table of Contents}
+
+
+\begin{DoxyItemize}
+\item \href{\#Repo}{\texttt{ What is contained in this repository?}}
+\item \href{\#Requirements}{\texttt{ Requirements}}
+\item \href{\#BIDS}{\texttt{ B\+I\+Ds data}}
+\item \href{\#addfigure}{\texttt{ Additional figures}}
+\item \href{\#ack}{\texttt{ Acknowledgments}}
+\end{DoxyItemize}
+
+\section*{\label{_Repo}%
+What is contained in this repository?}
+
+To get an overview please see {\itshape docs$>$html$>$index.\+html} or {\itshape docs$>$html$>$files.\+html}. The overall structure of this repository is as follows\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{LICENSE}
+\DoxyCodeLine{README}
+\DoxyCodeLine{|\_\_ tools                                      \# General tools used for the analysis}
+\DoxyCodeLine{            |\_\_ \_ext                           \# External tools used for the analysis}
+\DoxyCodeLine{                |\_\_ AM\_toolbox }
+\DoxyCodeLine{                |\_\_ gramm-master }
+\DoxyCodeLine{                |\_\_ ltfat}
+\DoxyCodeLine{                |\_\_ NoiseTools}
+\DoxyCodeLine{            |\_\_ private                       }
+\DoxyCodeLine{|\_\_ docs                                       \# Source code documentation}
+\DoxyCodeLine{|\_\_ reports                                    \# Data summaries in the form of figures and data tables}
+\DoxyCodeLine{            |\_\_ paper                           }
+\DoxyCodeLine{                   |\_\_ export\_summaries.m      \# Script used for exporting data summaries and figures}
+\DoxyCodeLine{                   |\_\_ fig1                    }
+\DoxyCodeLine{                   |\_\_ fig2                    }
+\DoxyCodeLine{                   |\_\_ fig3                    }
+\DoxyCodeLine{                   |\_\_ fig4                    }
+\DoxyCodeLine{                   |\_\_ fig5                    }
+\DoxyCodeLine{                   |\_\_ func                    \# Functions used for extracting the data summaries and exporting figures}
+\DoxyCodeLine{                   |\_\_ additional              \# Additional figures (reconstruction accuracies, classification accuracies, ERPs)    }
+\DoxyCodeLine{            |\_\_ review                         \# Folder containing additional figures shared with the reviewers }
+\DoxyCodeLine{                   |\_\_ review01 }
+\DoxyCodeLine{            |\_\_ dataset                        \# This folder contains figures that describes the dataset }
+\DoxyCodeLine{}
+\DoxyCodeLine{|\_\_ src                           }
+\DoxyCodeLine{            |\_\_ features                       \# General functions that can be used to derive audio and EEG features (later used for stimulus-response analysis)}
+\DoxyCodeLine{                   |\_\_ build\_aud\_features.m    \# Function used for extracting audio features}
+\DoxyCodeLine{                   |\_\_ build\_eeg\_features.m    \# Function used for extracting EEG features}
+\DoxyCodeLine{                   |\_\_ func                   }
+\DoxyCodeLine{                       |\_\_ modules            }
+\DoxyCodeLine{                           |\_\_ aud             \# Individual subprocessing modules for audio processing}
+\DoxyCodeLine{                           |\_\_ eeg             \# Individual subprocessing modules for EEG processing}
+\DoxyCodeLine{            |\_\_ paper                          \# Scripts used for the analysis presented in the manuscript}
+\DoxyCodeLine{                   |\_\_ private                }
+\DoxyCodeLine{                   |\_\_ control       }
+\DoxyCodeLine{            |\_\_ examples                       \# Scripts that illustrates ways of processing the data (either with- or without functions distributed in this repository)}
+\end{DoxyCode}
+
+
+\section*{\label{_Requirements}%
+Requirements}
+
+
+\begin{DoxyItemize}
+\item Matlab 9.\+4.\+0.\+813654 (R2018a) (see Matlab version information below)
+\item Field\+Trip, revision 20190207
+\item Noise\+Tools, revision 24-\/Mar-\/2019
+\item R version 3.\+6.\+0 (2019-\/04-\/26)
+\item L\+T\+F\+AT version 2.\+2.\+0 (distributed here)
+\item AM Toolbox version 0.\+9.\+7 (distributed here)
+\item Gramm Toolbox \href{https://doi.org/10.21105/joss.00568}{\texttt{ D\+OI}} (distributed here)
+\end{DoxyItemize}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{-----------------------------------------------------------------------------------------------------}
+\DoxyCodeLine{MATLAB Version: 9.4.0.813654 (R2018a)}
+\DoxyCodeLine{MATLAB License Number: 51651}
+\DoxyCodeLine{Operating System: Linux 4.4.0-151-generic \#178-Ubuntu SMP Tue Jun 11 08:30:22 UTC 2019 x86\_64}
+\DoxyCodeLine{Java Version: Java 1.8.0\_144-b01 with Oracle Corporation Java HotSpot(TM) 64-Bit Server VM mixed mode}
+\DoxyCodeLine{-----------------------------------------------------------------------------------------------------}
+\DoxyCodeLine{MATLAB                                                Version 9.4         (R2018a)                }
+\DoxyCodeLine{Simulink                                              Version 9.1         (R2018a)                }
+\DoxyCodeLine{DSP System Toolbox                                    Version 9.6         (R2018a)                            }
+\DoxyCodeLine{Statistics and Machine Learning Toolbox               Version 11.3        (R2018a)                }
+\end{DoxyCode}
+
+
+\section*{\label{_BIDS}%
+B\+I\+Ds data}
+
+All data are publicly available and described in more details at \href{https://doi.org/10.5072/zenodo.463871}{\texttt{ https\+://doi.\+org/10.\+5072/zenodo.\+463871}}. The data directory is organized according to the B\+I\+Ds format\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{README}
+\DoxyCodeLine{dataset\_description.json }
+\DoxyCodeLine{participants.tsv }
+\DoxyCodeLine{participants.json}
+\DoxyCodeLine{task-selectiveattention\_events.json}
+\DoxyCodeLine{task-tonestimuli\_events.json}
+\DoxyCodeLine{task-rest\_events.json}
+\DoxyCodeLine{sub-001}
+\DoxyCodeLine{    |\_\_ sub001\_scans.tsv}
+\DoxyCodeLine{    |\_\_ eeg }
+\DoxyCodeLine{          |\_\_ sub-001\_task-rest\_channels.tsv }
+\DoxyCodeLine{          |\_\_ sub-001\_task-rest\_channels.json }
+\DoxyCodeLine{          |\_\_ sub-001\_task-rest\_eeg.bdf }
+\DoxyCodeLine{          |\_\_ sub-001\_task-rest\_eeg.json }
+\DoxyCodeLine{          |\_\_ sub-001\_task-rest\_events.tsv }
+\DoxyCodeLine{          |\_\_ sub-001\_task-selectiveattention\_channels.tsv }
+\DoxyCodeLine{          |\_\_ sub-001\_task-selectiveattention\_channels.json }
+\DoxyCodeLine{          |\_\_ sub-001\_task-selectiveattention\_eeg.bdf }
+\DoxyCodeLine{          |\_\_ sub-001\_task-selectiveattention\_eeg.json }
+\DoxyCodeLine{          |\_\_ sub-001\_task-selectiveattention\_events.tsv }
+\DoxyCodeLine{          |\_\_ sub-001\_task-tonestimuli\_channels.tsv }
+\DoxyCodeLine{          |\_\_ sub-001\_task-tonestimuli\_channels.json }
+\DoxyCodeLine{          |\_\_ sub-001\_task-tonestimuli\_eeg.bdf }
+\DoxyCodeLine{          |\_\_ sub-001\_task-tonestimuli\_eeg.json }
+\DoxyCodeLine{          |\_\_ sub-001\_task-tonestimuli\_events.tsv }
+\DoxyCodeLine{sub-002}
+\DoxyCodeLine{sub-003}
+\DoxyCodeLine{...}
+\DoxyCodeLine{sub-048}
+\DoxyCodeLine{stimuli}
+\DoxyCodeLine{    |\_\_ sub001 }
+\DoxyCodeLine{          |\_\_ target}
+\DoxyCodeLine{            |\_\_ t001.wav}
+\DoxyCodeLine{            |\_\_ t001woa.wav}
+\DoxyCodeLine{            |\_\_ t001woacontrol.wav}
+\DoxyCodeLine{            |\_\_ t002.wav}
+\DoxyCodeLine{            |\_\_ t002woa.wav}
+\DoxyCodeLine{            |\_\_ t002woacontrol.wav}
+\DoxyCodeLine{            |\_\_ t003.wav}
+\DoxyCodeLine{            |\_\_ t003woa.wav}
+\DoxyCodeLine{            |\_\_ t003woacontrol.wav}
+\DoxyCodeLine{            |\_\_ t004.wav}
+\DoxyCodeLine{            |\_\_ t004woa.wav}
+\DoxyCodeLine{            |\_\_ t004woacontrol.wav}
+\DoxyCodeLine{            ...}
+\DoxyCodeLine{            |\_\_ t048.wav}
+\DoxyCodeLine{            |\_\_ t048woa.wav}
+\DoxyCodeLine{            |\_\_ t048woacontrol.wav}
+\DoxyCodeLine{          |\_\_ masker}
+\DoxyCodeLine{            |\_\_ m004.wav}
+\DoxyCodeLine{            |\_\_ m004woa.wav}
+\DoxyCodeLine{            |\_\_ m004woacontrol.wav}
+\DoxyCodeLine{            |\_\_ m006.wav}
+\DoxyCodeLine{            |\_\_ m006woa.wav}
+\DoxyCodeLine{            |\_\_ m006woacontrol.wav}
+\DoxyCodeLine{            |\_\_ m007.wav}
+\DoxyCodeLine{            |\_\_ m007woa.wav}
+\DoxyCodeLine{            |\_\_ m007woacontrol.wav}
+\DoxyCodeLine{            |\_\_ m008.wav}
+\DoxyCodeLine{            |\_\_ m008woa.wav}
+\DoxyCodeLine{            |\_\_ m008woacontrol.wav}
+\DoxyCodeLine{            ...}
+\DoxyCodeLine{    |\_\_ sub002 }
+\DoxyCodeLine{    |\_\_ sub003 }
+\DoxyCodeLine{    ...}
+\DoxyCodeLine{    |\_\_ sub048 }
+\DoxyCodeLine{derivatives}
+\end{DoxyCode}
+
+
+Due to a break during the selective attention experiment, sub-\/024 has data organized in the following way\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{sub-024}
+\DoxyCodeLine{    |\_\_ sub024\_scans.tsv}
+\DoxyCodeLine{    |\_\_ eeg }
+\DoxyCodeLine{          |\_\_ sub-024\_task-rest\_channels.tsv }
+\DoxyCodeLine{          |\_\_ sub-024\_task-rest\_channels.json }
+\DoxyCodeLine{          |\_\_ sub-024\_task-rest\_eeg.bdf }
+\DoxyCodeLine{          |\_\_ sub-024\_task-rest\_eeg.json }
+\DoxyCodeLine{          |\_\_ sub-024\_task-rest\_events.tsv }
+\DoxyCodeLine{          |\_\_ sub-024\_task-selectiveattention\_channels.tsv }
+\DoxyCodeLine{          |\_\_ sub-024\_task-selectiveattention\_channels.json }
+\DoxyCodeLine{          |\_\_ sub-024\_task-selectiveattention\_eeg.bdf }
+\DoxyCodeLine{          |\_\_ sub-024\_task-selectiveattention\_eeg.json }
+\DoxyCodeLine{          |\_\_ sub-024\_task-selectiveattention\_events.tsv }
+\DoxyCodeLine{          |\_\_ sub-024\_task-selectiveattention\_run-2\_channels.tsv }
+\DoxyCodeLine{          |\_\_ sub-024\_task-selectiveattention\_run-2\_channels.json }
+\DoxyCodeLine{          |\_\_ sub-024\_task-selectiveattention\_run-2\_eeg.bdf }
+\DoxyCodeLine{          |\_\_ sub-024\_task-selectiveattention\_run-2\_eeg.json }
+\DoxyCodeLine{          |\_\_ sub-024\_task-selectiveattention\_run-2\_events.tsv }
+\DoxyCodeLine{          |\_\_ sub-024\_task-tonestimuli\_channels.tsv }
+\DoxyCodeLine{          |\_\_ sub-024\_task-tonestimuli\_channels.json }
+\DoxyCodeLine{          |\_\_ sub-024\_task-tonestimuli\_eeg.bdf }
+\DoxyCodeLine{          |\_\_ sub-024\_task-tonestimuli\_eeg.json }
+\DoxyCodeLine{          |\_\_ sub-024\_task-tonestimuli\_events.tsv }
+\end{DoxyCode}
+
+
+\section*{\label{_addfigure}%
+Additional figures}
+
+Additional figures can be found in \textquotesingle{}{\itshape reports$>$paper$>$additional}\textquotesingle{}, \textquotesingle{}{\itshape reports$>$dataset}\textquotesingle{} and \textquotesingle{}{\itshape reports$>$review$>$review01}\textquotesingle{}. The figures found in \textquotesingle{}{\itshape reports$>$paper$>$additional}\textquotesingle{} are also shown below\+:
+
+\subsection*{Fig S1 }
+
+{\bfseries{Left}} Classification accuracies as a function of duration of decoding segments. Results have here been obtained with stimulus reconstruction models trained on single-\/talker data and evaluated on two-\/talker data. The spatial denoising filters were in this case optimized based on single-\/talker data. Decoding segments with durations of 1 s, 3 s, 5 s, 7 s, 10 s, 15 s, 20 s and 30 s (taking into account the 0.\+5 s long kernel of the stimulus reconstruction models) were considered. The decoding segments were non-\/overlapping, and each decoding segment was shifted by the decoding segment duration plus additional 5 s long time shifts. Data reflect group mean averages and standard deviations. Note that the errorbars for each group at a given duration of decoding segments have been shifted by 0.\+2 s around its actual decoding segment duration for visualization purposes. Dashed line shows chance level when assumed to follow a binomial distribution.
+
+{\bfseries{Right}} The ability to reconstruct envelopes of attended and unattended speech streams from E\+EG activity in the different listening conditions. Model performance was assessed by nested cross-\/validation procedures. Reconstruction accuracies reflect Pearson\textquotesingle{}s correlation coefficient between neural reconstruction and target envelope over trials not used for model fitting. Points reflect averaged data for each individual subject. Errorbars represent s.\+e.\+m. Bar height reflect group-\/mean average. The estimated noise floor is here highlighted with a dashed line.
+
+~\newline
+ ~\newline
+   ~\newline
+ ~\newline
+
+
+\subsection*{Fig S2 }
+
+Cortical event-\/related potentials (E\+R\+Ps) to 1000 Hz ramped tones presented with jittered inter-\/onset intervals. First and second panel (from left)\+: Individual traces of E\+RP data averaged over the same fronto-\/central electrode cluster that was used for the entrainment analysis. Thin lines reflect data from individual subjects. Thick lines reflect group-\/mean averages. Third panel\+: Mean amplitude of N1 E\+R\+Ps averaged over a time interval from 75 ms to 130 ms. Errorbars show s.\+e.\+m. across listeners. Fourth (right) panel\+: Group-\/mean topographies of mean N1 amplitude.
+
+~\newline
+ ~\newline
+  ~\newline
+ ~\newline
+
+
+\section*{\label{_ack}%
+Acknowledgments}
+
+This work was supported by the EU H2020-\/\+I\+CT grant number 644732 (C\+O\+C\+O\+HA\+: Cognitive Control of a Hearing Aid) and by the Novo Nordisk Foundation synergy grant N\+N\+F17\+O\+C0027872 (U\+Heal). 

@@ -1,0 +1,40 @@
+\hypertarget{regevalloosvdridge_8m}{}\section{/\+Users/safugl/\+Nextcloud/utils/ds-\/nhhi/tools/regevalloosvdridge.m File Reference}
+\label{regevalloosvdridge_8m}\index{/Users/safugl/Nextcloud/utils/ds-\/nhhi/tools/regevalloosvdridge.m@{/Users/safugl/Nextcloud/utils/ds-\/nhhi/tools/regevalloosvdridge.m}}
+
+
+Fits Ridge regression models using $<$regfitsvdridge$>$ and evaluates the predictive power using a leave-\/one-\/trial-\/out cross-\/validation technique.  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{regevalloosvdridge_8m_a377ba7db33a4dae6a5fa4fa3077e96b2}\label{regevalloosvdridge_8m_a377ba7db33a4dae6a5fa4fa3077e96b2}} 
+function {\bfseries regevalloosvdridge} (in opts, in xx, in yy)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Fits Ridge regression models using $<$regfitsvdridge$>$ and evaluates the predictive power using a leave-\/one-\/trial-\/out cross-\/validation technique. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em opts} & configuration struct \\
+\hline
+{\em opts.\+lambda} & Ridge regularization hyperparameters of interest. Default\+: \mbox{[}10 100 1000\mbox{]} \\
+\hline
+{\em opts.\+znormd} & Should the data be Z-\/scored?. Default\+: 1 (yes). Alternatively set it to 0 (no) \\
+\hline
+{\em opts.\+gof} & What goodness-\/of-\/fit metric is considered? default\+: \textquotesingle{}estcorr\textquotesingle{}. Please note that this is an advanced field and should most often be left as is. \\
+\hline
+{\em xx} & regressor matrix of size (time x features x trials) \\
+\hline
+{\em yy} & target matrix of size (time x features x trials) \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em ww} & model weights for the model that yield best goodness-\/of-\/fit during cross-\/validation \\
+\hline
+{\em acc} & prediction accuracy after averaging over all outer folds for each lambda and selecting the maximum (please note that this may show signs of overfitting and should thus be taken with a grain of salt, and we did not use this measure) \\
+\hline
+\end{DoxyRetVals}
