@@ -1,6 +1,6 @@
-%> @file  extract_erp.m ORIGINAL CODE
+%> @file  extract_erp.m
 %> @brief Export figure showing traces of- and topographies of
-%tone-elicited ERPs AVERAGES ONLY (original code)
+%tone-elicited ERPs AVERAGES ONLY (original c
 
 %> history
 %> 2019/07/08 added comments and doplot option

@@ -25,28 +25,10 @@ if nargin < 5 || isempty(savesummary); savesummary = 1; end
 
 initdir
 workflows_paper
-% 
-% dtab_behav  = extract_behavior(sdir,bidsdir,do_plot);
-% dtab_enc    = extract_encoding_results(sdir,bidsdir,pipeline_aud_attention,pipeline_eeg_attention,cameq,do_plot);
-% dtab_classa = extract_classification_results(sdir,bidsdir,pipeline_aud_attention,pipeline_eeg_attention_st_denoising,cameq,do_plot);
-dtab_erp    = extract_erp(sdir,bidsdir,pipeline_erp,do_plot);
-% dtab_erp_dg = extract_erp_from_efr_data(sdir,bidsdir,pipeline_dg_erp);
-% dtab_itpc   = extract_itpc_results(sdir,bidsdir,pipeline_dg_itpc,do_plot);
-% dtab_recacc = extract_decoding_results(sdir,bidsdir,pipeline_aud_attention,pipeline_eeg_attention,cameq,do_plot);
-% 
-% dtab_enc_mc = extract_encoding_results(sdir,bidsdir,pipeline_aud_attention_multiple_c,pipeline_eeg_attention,cameq,0);  
-% dtab_enc_mc = dtab_enc_mc(:,1:3);    
-% dtab_enc_mc.Properties.VariableNames{3} = 'encoding_accuracy_mc';
 
-% 
-% dtab = iojointables(dtab_behav,...
-%                     dtab_erp, ...
-%                     dtab_itpc,...
-%                     dtab_enc,...
-%                     dtab_erp_dg,...
-%                     dtab_enc_mc,...
-%                     dtab_classa,...
-%                     dtab_recacc);
+dtab_erp    = extract_component_erp(sdir,bidsdir,pipeline_erp,do_plot);
+% dtab_erp    = extract_erp(sdir,bidsdir,pipeline_erp,do_plot);
+
 dtab = dtab_erp;
 
 if savesummary
@@ -58,22 +40,3 @@ end
 end
 
 
-
-
-
-
-
-
-
-
-
-
-function dtab = iojointables(varargin)
-
-dtab = varargin{1};
-
-for ii = 2 : nargin
-  dtab = join(dtab, varargin{ii});
-end
-
-end
