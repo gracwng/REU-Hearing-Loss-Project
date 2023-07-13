@@ -381,3 +381,8 @@ C:\Users\student\Documents\snhl-ERP\machine learning\testing\P3\Healthy
 C:\Users\student\Documents\snhl-ERP\machine learning\testing\P3\Hearing Impaired
 
 Generate a script that will convert the structure of the folders given this info:
+
+
+const deposit = () => {
+    
+}
