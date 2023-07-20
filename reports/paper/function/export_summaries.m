@@ -26,7 +26,8 @@ if nargin < 5 || isempty(savesummary); savesummary = 1; end
 initdir
 workflows_paper
 
-dtab_erp    = extract_component_erp(sdir,bidsdir,pipeline_erp,do_plot);
+dtab_erp    = extract_all_erp(sdir,bidsdir,pipeline_erp,do_plot);
+% dtab_erp    = extract_component_erp(sdir,bidsdir,pipeline_erp,do_plot);
 % dtab_erp    = extract_erp(sdir,bidsdir,pipeline_erp,do_plot);
 
 dtab = dtab_erp;
