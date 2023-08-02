@@ -1,7 +1,7 @@
 # Topographical Scalp Maps for Hearing Impairment Detection: A CNN Approach
 
 **Authors:** Grace Wang, Dr. Beiyu Lin  
-**Date:** July 2023
+**Date:** June-August 2023
 
 ## Abstract
 
@@ -85,4 +85,4 @@ The CNN architecture achieves approximately 85%-95% accuracy in detecting hearin
 - Explore alternative machine learning methods.
 - Fine-tune model parameters for improved performance.
 
-A detailed paper is located in the documents folder.
+A detailed paper and poster is located in the documents folder.
