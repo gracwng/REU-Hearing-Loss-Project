@@ -1,0 +1,36 @@
+\hypertarget{runall__binauralhf___f_cz_8m}{}\section{/\+Users/safugl/\+Nextcloud/utils/ds-\/nhhi/src/paper/control/runall\+\_\+binauralhf\+\_\+\+F\+Cz.m File Reference}
+\label{runall__binauralhf___f_cz_8m}\index{/Users/safugl/Nextcloud/utils/ds-\/nhhi/src/paper/control/runall\_binauralhf\_FCz.m@{/Users/safugl/Nextcloud/utils/ds-\/nhhi/src/paper/control/runall\_binauralhf\_FCz.m}}
+
+
+Performs an encoding analysis operating on multidimensional cochleograms extracted for each of the two audio channels. For computational purposes we only focus on E\+EG data in channel F\+Cz.  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{runall__binauralhf___f_cz_8m_a92ccf197877efa10bb08d1859b851ccb}\label{runall__binauralhf___f_cz_8m_a92ccf197877efa10bb08d1859b851ccb}} 
+function {\bfseries runall\+\_\+binauralhf\+\_\+\+F\+Cz} (in subid, in bidsdir, in sdir, in eegpreproc, in audpreproc, in fitmodels)
+\item 
+\mbox{\Hypertarget{runall__binauralhf___f_cz_8m_a7bbe911eac4e73a9de002a0e53108bb6}\label{runall__binauralhf___f_cz_8m_a7bbe911eac4e73a9de002a0e53108bb6}} 
+function {\bfseries evaluate\+\_\+encoding\+\_\+analysis\+\_\+roi} (in subid, in pipeline\+\_\+aud\+\_\+attention, in pipeline\+\_\+eeg\+\_\+attention, in sdir, in cameq)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Performs an encoding analysis operating on multidimensional cochleograms extracted for each of the two audio channels. For computational purposes we only focus on E\+EG data in channel F\+Cz. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em subid} & subject id (an integer between 1 and 44) \\
+\hline
+{\em bidsdir} & the root of the B\+I\+Ds directory \\
+\hline
+{\em sdir} & directory in which the features and model results are stored \\
+\hline
+{\em eegpreproc} & a flag (0/1) that indicates whether or not to build eeg features. 1 = assumes that these features have already been extracted \\
+\hline
+{\em audpreproc} & a flag (0/1) that indicates whether or not to build audio features. this can by handy with limited signal processing licenses \\
+\hline
+{\em fitmodels} & a flag (0/1) that indicates whether or not to actually fit and evaluate the encoding models \\
+\hline
+\end{DoxyParams}

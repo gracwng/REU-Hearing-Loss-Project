@@ -1,0 +1,22 @@
+\hypertarget{r01f02_8m}{}\section{/\+Users/safugl/\+Nextcloud/utils/ds-\/nhhi/reports/review/review01/func/r01f02.m File Reference}
+\label{r01f02_8m}\index{/Users/safugl/Nextcloud/utils/ds-\/nhhi/reports/review/review01/func/r01f02.m@{/Users/safugl/Nextcloud/utils/ds-\/nhhi/reports/review/review01/func/r01f02.m}}
+
+
+Perform a cross-\/correlation analysis on audio representations comparable to that reported in doi\+:10.\+1152/jn.00527.\+2016.; J Neurophysiol 117\+: 18-\/27, 2017. Here, we use the same, elegant (and computationally fast) way of extracting speech-\/onset envelopes that put emphasis on onsets. Note that we focus on speech stimuli without Cam\+EQ for hearing-\/impaired listeners as in the aforementioned study. Also note that we take a few shortcuts for simplicity(D\+S\+S-\/based E\+OG denoising, averaging E\+EG data over a set of fronto-\/central electrodes), and that and this is N\+OT meant as a direct comparison. This approach is useful for highlighting stimulus-\/response relations without having to go into the computationally intensive modeling approach.  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{r01f02_8m_aba33a05461754203c9b969645a820c8b}\label{r01f02_8m_aba33a05461754203c9b969645a820c8b}} 
+function {\bfseries r01f02} (in bidsdir)
+\item 
+\mbox{\Hypertarget{r01f02_8m_abf7995df3d59881729f92218a00b9da4}\label{r01f02_8m_abf7995df3d59881729f92218a00b9da4}} 
+function {\bfseries export01f02fig} (in r\+\_\+cc, in participants, in fs, in lags)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Perform a cross-\/correlation analysis on audio representations comparable to that reported in doi\+:10.\+1152/jn.00527.\+2016.; J Neurophysiol 117\+: 18-\/27, 2017. Here, we use the same, elegant (and computationally fast) way of extracting speech-\/onset envelopes that put emphasis on onsets. Note that we focus on speech stimuli without Cam\+EQ for hearing-\/impaired listeners as in the aforementioned study. Also note that we take a few shortcuts for simplicity(D\+S\+S-\/based E\+OG denoising, averaging E\+EG data over a set of fronto-\/central electrodes), and that and this is N\+OT meant as a direct comparison. This approach is useful for highlighting stimulus-\/response relations without having to go into the computationally intensive modeling approach. 
+
+One important consideration that we want to highlight is that the premise for using the frequency-\/dependent Cam\+EQ equalization is that the hearing-\/impaired listeners have a loss of sensitivity to certain frequencies and that this equalization up to some extend accounts for that. A similar approach has been taken in a number of recent studies. However, we must stress that one should be careful with testing for statistical stimulus-\/response dependencies between envelopes of the actual stimuli (with Cam\+EQ) for envelope representaitons that are highly sensitive to Cam\+EQ amplification. This is particularly important for univariate envelope representations. What can happen is that the different representations themself will drive group-\/differences in the stimulus-\/response dependencies. 

@@ -1,0 +1,23 @@
+var searchData=
+[
+  ['r01exportcsvtables_2em',['r01exportcsvtables.m',['../r01exportcsvtables_8m.html',1,'']]],
+  ['r01f01_2em',['r01f01.m',['../r01f01_8m.html',1,'']]],
+  ['r01f02_2em',['r01f02.m',['../r01f02_8m.html',1,'']]],
+  ['r01f03_2em',['r01f03.m',['../r01f03_8m.html',1,'']]],
+  ['r01f04_2em',['r01f04.m',['../r01f04_8m.html',1,'']]],
+  ['r01f05_2em',['r01f05.m',['../r01f05_8m.html',1,'']]],
+  ['r01f06_2em',['r01f06.m',['../r01f06_8m.html',1,'']]],
+  ['r01f07_2em',['r01f07.m',['../r01f07_8m.html',1,'']]],
+  ['regevalloosvdridge_2em',['regevalloosvdridge.m',['../regevalloosvdridge_8m.html',1,'']]],
+  ['regevalnestedloopssvdridge_2em',['regevalnestedloopssvdridge.m',['../regevalnestedloopssvdridge_8m.html',1,'']]],
+  ['regevaloptimallambdasvdridge',['regevaloptimallambdasvdridge',['../regevaloptimallambdasvdridge_8m.html#a5502468f1b7a3d87f05a7b2ab84ec278',1,'regevaloptimallambdasvdridge.m']]],
+  ['regevaloptimallambdasvdridge_2em',['regevaloptimallambdasvdridge.m',['../regevaloptimallambdasvdridge_8m.html',1,'']]],
+  ['regevalsurrdata',['regevalsurrdata',['../regevalsurrdata_8m.html#af4be3a4ac16c9ccf71dac9f22e1e97d6',1,'regevalsurrdata.m']]],
+  ['regevalsurrdata_2em',['regevalsurrdata.m',['../regevalsurrdata_8m.html',1,'']]],
+  ['regfitsvdridge',['regfitsvdridge',['../regfitsvdridge_8m.html#ae2d082fadea5fc5a7130931fc01a9e0d',1,'regfitsvdridge.m']]],
+  ['regfitsvdridge_2em',['regfitsvdridge.m',['../regfitsvdridge_8m.html',1,'']]],
+  ['runall_2em',['runall.m',['../runall_8m.html',1,'']]],
+  ['runall_5fbinauralhf_5ffcz_2em',['runall_binauralhf_FCz.m',['../runall__binauralhf___f_cz_8m.html',1,'']]],
+  ['runall_5fbinauralhf_5fpca_2em',['runall_binauralhf_pca.m',['../runall__binauralhf__pca_8m.html',1,'']]],
+  ['runall_5fsr_5fcontrol_2em',['runall_sr_control.m',['../runall__sr__control_8m.html',1,'']]]
+];

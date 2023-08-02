@@ -1,0 +1,47 @@
+\hypertarget{matfiltfirzerophase_8m}{}\section{/\+Users/safugl/\+Nextcloud/utils/ds-\/nhhi/tools/matfiltfirzerophase.m File Reference}
+\label{matfiltfirzerophase_8m}\index{/Users/safugl/Nextcloud/utils/ds-\/nhhi/tools/matfiltfirzerophase.m@{/Users/safugl/Nextcloud/utils/ds-\/nhhi/tools/matfiltfirzerophase.m}}
+
+
+Applies a low-\/ or high-\/pass linear phase F\+IR filter to an 2d array and shifts the data to account for filter delays. This function demeans the data, use an endpoint-\/padding approach and subsequently adds the mean back to the data.  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{matfiltfirzerophase_8m_ae2d8679856c72cba5608ee87af4dda9b}{matfiltfirzerophase}} (in xx, in fs, in n, in fc, in causal, in type)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Applies a low-\/ or high-\/pass linear phase F\+IR filter to an 2d array and shifts the data to account for filter delays. This function demeans the data, use an endpoint-\/padding approach and subsequently adds the mean back to the data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em xx} & is a matrix of dimensions (time x columns) \\
+\hline
+{\em fs} & sampling rate \\
+\hline
+{\em n} & order of filter (must be even) \\
+\hline
+{\em fc} & 6 dB cutoff frequency \\
+\hline
+{\em causal} & a 0/1 flag. 0 = shift to account for delays, 1 = do not shift. It is important to note that it here is called \char`\"{}causal\char`\"{}, but the demeaning does not really fulfill that. note that we never use causal=1 in this project \\
+\hline
+{\em type} & high pass filter (\textquotesingle{}high\textquotesingle{}) or low-\/pass filter (\textquotesingle{}low\textquotesingle{}, default) \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em xf} & filtered matrix of dimensions (time x columns). \\
+\hline
+\end{DoxyRetVals}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{matfiltfirzerophase_8m_ae2d8679856c72cba5608ee87af4dda9b}\label{matfiltfirzerophase_8m_ae2d8679856c72cba5608ee87af4dda9b}} 
+\index{matfiltfirzerophase.m@{matfiltfirzerophase.m}!matfiltfirzerophase@{matfiltfirzerophase}}
+\index{matfiltfirzerophase@{matfiltfirzerophase}!matfiltfirzerophase.m@{matfiltfirzerophase.m}}
+\subsubsection{\texorpdfstring{matfiltfirzerophase()}{matfiltfirzerophase()}}
+{\footnotesize\ttfamily function matfiltfirzerophase (\begin{DoxyParamCaption}\item[{in}]{xx,  }\item[{in}]{fs,  }\item[{in}]{n,  }\item[{in}]{fc,  }\item[{in}]{causal,  }\item[{in}]{type }\end{DoxyParamCaption})}
+
+history 2019/15/07 updated comments 

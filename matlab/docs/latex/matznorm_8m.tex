@@ -1,0 +1,32 @@
+\hypertarget{matznorm_8m}{}\section{/\+Users/safugl/\+Nextcloud/utils/ds-\/nhhi/tools/matznorm.m File Reference}
+\label{matznorm_8m}\index{/Users/safugl/Nextcloud/utils/ds-\/nhhi/tools/matznorm.m@{/Users/safugl/Nextcloud/utils/ds-\/nhhi/tools/matznorm.m}}
+
+
+Z-\/score a matrix to its empirical mean and standard deviation.  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{matznorm_8m_a8bbf6baece4efa7017cfa19445e1bc58}\label{matznorm_8m_a8bbf6baece4efa7017cfa19445e1bc58}} 
+function {\bfseries matznorm} (in xx, in mu, in sd)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Z-\/score a matrix to its empirical mean and standard deviation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em xx} & input matrix of size (time x features) \\
+\hline
+{\em mu} & (optional) mean to be subtracted from data (1 x features) \\
+\hline
+{\em sd} & (optional) standard deviation to be normalized to (1 x features). This function prevents that small sd values causes standardization to blow up, when sd is calculated from $<$xx$>$. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em yy} & z-\/scored output matrix \\
+\hline
+\end{DoxyRetVals}

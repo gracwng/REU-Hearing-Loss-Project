@@ -1,0 +1,31 @@
+\hypertarget{evaluate__encoding__analysis_8m}{}\section{/\+Users/safugl/\+Nextcloud/utils/ds-\/nhhi/src/paper/private/evaluate\+\_\+encoding\+\_\+analysis.m File Reference}
+\label{evaluate__encoding__analysis_8m}\index{/Users/safugl/Nextcloud/utils/ds-\/nhhi/src/paper/private/evaluate\_encoding\_analysis.m@{/Users/safugl/Nextcloud/utils/ds-\/nhhi/src/paper/private/evaluate\_encoding\_analysis.m}}
+
+
+Encoding analysis for attended and unattended speech in single-\/talker and two-\/talker conditions. This analysis is performed using nested cross-\/validation procedures. The parameters are here pre-\/specified for the manuscript.  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{evaluate__encoding__analysis_8m_a3171bad52a8e722920e747ecd193a349}\label{evaluate__encoding__analysis_8m_a3171bad52a8e722920e747ecd193a349}} 
+function \mbox{\hyperlink{evaluate__encoding__analysis_8m_a3171bad52a8e722920e747ecd193a349}{evaluate\+\_\+encoding\+\_\+analysis}} (in subid, in pipeline\+\_\+aud\+\_\+attention, in pipeline\+\_\+eeg\+\_\+attention, in sdir, in cameq)
+\begin{DoxyCompactList}\small\item\em 2019/07/16 major\+: updated woa input to match build\+\_\+aud\+\_\+features \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Encoding analysis for attended and unattended speech in single-\/talker and two-\/talker conditions. This analysis is performed using nested cross-\/validation procedures. The parameters are here pre-\/specified for the manuscript. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em subid} & subject id (an integer between 1 and 44) \\
+\hline
+{\em pipeline\+\_\+aud} & the preprocessing pipeline struct for the audio (see \mbox{\hyperlink{workflows__paper_8m}{workflows\+\_\+paper.\+m}}) \\
+\hline
+{\em pipeline\+\_\+eeg} & the preprocessing pipeline struct for the eeg (see \mbox{\hyperlink{workflows__paper_8m}{workflows\+\_\+paper.\+m}}) \\
+\hline
+{\em sdir} & where was the derived features stored and where will the results be stored? \\
+\hline
+{\em cameq} & \href{with/without CamEQ}{\texttt{ \textquotesingle{}wa\textquotesingle{}/\textquotesingle{}woa\textquotesingle{}}}. woa = focus on audio without Cambridge equalization, wa = focus on audio with Cambridge amplification (default) \\
+\hline
+\end{DoxyParams}

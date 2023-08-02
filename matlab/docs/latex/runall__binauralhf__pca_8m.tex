@@ -1,0 +1,36 @@
+\hypertarget{runall__binauralhf__pca_8m}{}\section{/\+Users/safugl/\+Nextcloud/utils/ds-\/nhhi/src/paper/control/runall\+\_\+binauralhf\+\_\+pca.m File Reference}
+\label{runall__binauralhf__pca_8m}\index{/Users/safugl/Nextcloud/utils/ds-\/nhhi/src/paper/control/runall\_binauralhf\_pca.m@{/Users/safugl/Nextcloud/utils/ds-\/nhhi/src/paper/control/runall\_binauralhf\_pca.m}}
+
+
+Performs an encoding analysis operating on multidimensional cochleograms extracted for each of the two audio channels. For computational purposes we here reduce the dimensionality of this audio representation using principal component analysis.  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{runall__binauralhf__pca_8m_abe3463899ff7536cd6fad45be97a08df}\label{runall__binauralhf__pca_8m_abe3463899ff7536cd6fad45be97a08df}} 
+function {\bfseries runall\+\_\+binauralhf\+\_\+pca} (in subid, in bidsdir, in sdir, in eegpreproc, in audpreproc, in fitmodels)
+\item 
+\mbox{\Hypertarget{runall__binauralhf__pca_8m_a77ae3b3b51bf131141026e62427d2c55}\label{runall__binauralhf__pca_8m_a77ae3b3b51bf131141026e62427d2c55}} 
+function {\bfseries evaluate\+\_\+encoding\+\_\+analysis\+\_\+pca} (in subid, in pipeline\+\_\+aud\+\_\+attention, in pipeline\+\_\+eeg\+\_\+attention, in sdir, in cameq)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Performs an encoding analysis operating on multidimensional cochleograms extracted for each of the two audio channels. For computational purposes we here reduce the dimensionality of this audio representation using principal component analysis. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em subid} & subject id (an integer between 1 and 44) \\
+\hline
+{\em bidsdir} & the root of the B\+I\+Ds directory \\
+\hline
+{\em sdir} & directory in which the features and model results are stored \\
+\hline
+{\em eegpreproc} & a flag (0/1) that indicates whether or not to build eeg features. 1 = assumes that these features have already been extracted \\
+\hline
+{\em audpreproc} & a flag (0/1) that indicates whether or not to build audio features. this can by handy with limited signal processing licenses \\
+\hline
+{\em fitmodels} & a flag (0/1) that indicates whether or not to actually fit and evaluate the encoding models \\
+\hline
+\end{DoxyParams}

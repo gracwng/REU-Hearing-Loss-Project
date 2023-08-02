@@ -1,0 +1,44 @@
+\hypertarget{sr__classificationanalysis_8m}{}\section{/\+Users/safugl/\+Nextcloud/utils/ds-\/nhhi/src/paper/private/sr\+\_\+classificationanalysis.m File Reference}
+\label{sr__classificationanalysis_8m}\index{/Users/safugl/Nextcloud/utils/ds-\/nhhi/src/paper/private/sr\_classificationanalysis.m@{/Users/safugl/Nextcloud/utils/ds-\/nhhi/src/paper/private/sr\_classificationanalysis.m}}
+
+
+Trains a reconstruction model on single-\/talker data using L\+OO and evaluates how accurately the model can be used to discrinate between attended and unattended speech from two-\/talker data.  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{sr__classificationanalysis_8m_a9b51982023315030645f98589bc7c772}\label{sr__classificationanalysis_8m_a9b51982023315030645f98589bc7c772}} 
+function {\bfseries sr\+\_\+classificationanalysis} (in opts, in srdat)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Trains a reconstruction model on single-\/talker data using L\+OO and evaluates how accurately the model can be used to discrinate between attended and unattended speech from two-\/talker data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em opts} & configuration structure \\
+\hline
+{\em opts.\+tdur} & duration of decoding segments (in s) \\
+\hline
+{\em opts.\+fs} & sampling rate of preprocessed data (e.\+g. fs=64) \\
+\hline
+{\em opts.\+tshift} & how long are the shifts (in s) between each segment? the decoding segments are nonoverlapping and shifted with opts\+\_\+classification.\+tdur + opts\+\_\+classification.\+tshift) \\
+\hline
+{\em opts.\+lagoi} & lags of interest (e.\+g. -\/32\+:0) \\
+\hline
+{\em opts.\+znormd} & flag indicating if the data should be z-\/scored (1) or not (0) \\
+\hline
+{\em opts.\+lambda} & regularization parameters of interest (e.\+g \mbox{[}1 10 100\mbox{]}) \\
+\hline
+{\em opts.\+gof} & goodness of fit metric (e.\+g. \textquotesingle{}estcorr\textquotesingle{}) \\
+\hline
+{\em srdat} & imported and preprocessed audio/\+E\+EG data (see \mbox{\hyperlink{sr__importdata_8m}{sr\+\_\+importdata.\+m}})\\
+\hline
+\end{DoxyParams}
+The backward models in this project are based on ridge-\/regularized filters (and not tikhonov filters as they potentially introduce relatively strong cross-\/channel leakages)
+
+to do\+: right now the opt.\+gof functionality is not included and this function only relies on \textquotesingle{}estcorr\textquotesingle{}. this could be nice to include
+
+history 2019/07/12 allowed the classification decision to handle multidimensional aud features 

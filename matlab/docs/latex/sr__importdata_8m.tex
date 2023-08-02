@@ -1,0 +1,32 @@
+\hypertarget{sr__importdata_8m}{}\section{/\+Users/safugl/\+Nextcloud/utils/ds-\/nhhi/src/paper/private/sr\+\_\+importdata.m File Reference}
+\label{sr__importdata_8m}\index{/Users/safugl/Nextcloud/utils/ds-\/nhhi/src/paper/private/sr\_importdata.m@{/Users/safugl/Nextcloud/utils/ds-\/nhhi/src/paper/private/sr\_importdata.m}}
+
+
+Imports preprocessed E\+EG and audio features from a given subject from the selective attention experiment and prepares a struct used for stimulus-\/response analysis.  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{sr__importdata_8m_a21808e849a6faff50a8c0a99b312e3bd}\label{sr__importdata_8m_a21808e849a6faff50a8c0a99b312e3bd}} 
+function {\bfseries sr\+\_\+importdata} (in subid, in pipeline\+\_\+aud, in pipeline\+\_\+eeg, in sdir, in cameq)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Imports preprocessed E\+EG and audio features from a given subject from the selective attention experiment and prepares a struct used for stimulus-\/response analysis. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em subid} & subject id (an integer between 1 and 44) \\
+\hline
+{\em pipeline\+\_\+aud} & the preprocessing pipeline struct for the audio (see \mbox{\hyperlink{workflows__paper_8m}{workflows\+\_\+paper.\+m}}) \\
+\hline
+{\em pipeline\+\_\+eeg} & the preprocessing pipeline struct for the eeg (see \mbox{\hyperlink{workflows__paper_8m}{workflows\+\_\+paper.\+m}}) \\
+\hline
+{\em sdir} & where was the derived features stored? \\
+\hline
+{\em cameq} & \mbox{[}\textquotesingle{}wa\textquotesingle{}/\textquotesingle{}woa\textquotesingle{}/\textquotesingle{}woacontrol\textquotesingle{}\mbox{]}\+: please see readme\\
+\hline
+\end{DoxyParams}
+Please keep in mind that we assume that the E\+EG preprocessing and audio preprocessing pipelines already have segmented E\+EG and audio data such that the segments are temporally consistent. This function does not check for this and should thus be used with caution. 
