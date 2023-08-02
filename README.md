@@ -1,6 +1,6 @@
 # Topographical Scalp Maps for Hearing Impairment Detection: A CNN Approach
 
-**Author:** Grace Wang
+**Author:** Grace Wang  
 **Mentor:** Dr. Beiyu Lin  
 **Date:** June-August 2023
 
