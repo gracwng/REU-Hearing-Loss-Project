@@ -47,7 +47,6 @@ Using ERPs, scalp maps are extracted at 10 ms intervals, resulting in 40 scalp m
 ### CNN Architecture
 
 The CNN model comprises convolutional and pooling layers, with a final dense layer for classification.
-
 ![Visual representation of CNN model](machine learning/CNNArchitecture.png)
 
 ## Results
