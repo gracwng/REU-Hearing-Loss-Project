@@ -29,6 +29,6 @@
 
 2. Access the machine learning-related files in the `machine learning` folder of this repository.
 
-3. The Python notebook `ResNet_50.ipynb` (`machine learning/ResNet_50.ipynb`) contains the details of the CNN model experimentation.
+3. The Python notebook `CNN.ipynb` (`machine learning/machine learning/CNN.ipynb`) contains the details of the CNN model experimentation.
 
 With these steps, you should be able to replicate the project and explore the EEG data processing, image extraction, and CNN model experimentation involved. Adjust the file paths and configurations as needed for your setup.
