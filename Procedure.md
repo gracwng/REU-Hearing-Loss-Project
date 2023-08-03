@@ -1,6 +1,6 @@
 # How to Replicate This Project
 
-**Before replicating this project**, it's recommended to read the associated paper for a comprehensive understanding located in the `documents` folder.
+**Before replicating this project**, it's recommended to read the associated paper for a comprehensive understanding located in the `documents` folder (documents/Grace Wang Hearing Loss Project paper.pdf)
 
 ## Obtaining Scalp Map Images
 
