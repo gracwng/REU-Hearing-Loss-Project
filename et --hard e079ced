@@ -1,0 +1,507 @@
+[33mcommit e079ced7593cadae2c95da6ccc90390de3e9fb96[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: gracwng <grace.wang.2@stonybrook.edu>
+Date:   Sun Jan 7 06:21:29 2024 -0800
+
+    updated testing for folds
+
+[33mcommit a9d6df82426c945ebf38fa450a2742f9052c27a9[m
+Author: gracwng <grace.wang.2@stonybrook.edu>
+Date:   Sun Jan 7 06:15:18 2024 -0800
+
+    prepare creating folds
+
+[33mcommit 63d815eb8b2d9edc3e52716dc0ac973990dac482[m
+Author: gracwng <grace.wang.2@stonybrook.edu>
+Date:   Fri Jan 5 18:20:34 2024 -0800
+
+    set up for 5 kfold
+
+[33mcommit 7b1f60f603a181c15b94a62aa90fc26defb260fc[m
+Author: gracwng <grace.wang.2@stonybrook.edu>
+Date:   Fri Jan 5 18:03:58 2024 -0800
+
+    moved folders
+
+[33mcommit c666cf9d7073519d62ef2fe934cc5a12b3c5c994[m
+Author: gracwng <grace.wang.2@stonybrook.edu>
+Date:   Fri Jan 5 18:01:45 2024 -0800
+
+    new folder
+
+[33mcommit b79f53d87216e8763feba5d12386a7ba876e4d0f[m
+Author: gracwng <grace.wang.2@stonybrook.edu>
+Date:   Fri Jan 5 17:56:42 2024 -0800
+
+    Your commit message here
+
+[33mcommit 40034defa1c4981ba94e8ec1b9ac2422b819fda4[m
+Author: Grace Wang <70417984+gracwng@users.noreply.github.com>
+Date:   Mon Nov 27 18:37:39 2023 -0500
+
+    updates
+
+[33mcommit 54c18fc3dd26fc23379fb1da8ddb7feebad8a285[m
+Author: Grace Wang <70417984+gracwng@users.noreply.github.com>
+Date:   Mon Nov 27 18:34:19 2023 -0500
+
+    updates
+
+[33mcommit b7cfc196aaae7dd4eed374c4fced174f13c243fd[m
+Merge: d207299 f4232a6
+Author: Grace Wang <70417984+gracwng@users.noreply.github.com>
+Date:   Mon Nov 27 18:27:21 2023 -0500
+
+    Merge branch 'main' of https://github.com/gracwng/REU-Hearing-Loss-Project
+
+[33mcommit d2072991bdf9577057562ea9e6040f2f52eb3024[m
+Author: Grace Wang <70417984+gracwng@users.noreply.github.com>
+Date:   Sun Nov 26 11:10:50 2023 -0500
+
+    update
+
+[33mcommit f4232a61c5d14b0282f6988ec89545add5b68157[m
+Author: Grace Wang <70417984+gracwng@users.noreply.github.com>
+Date:   Fri Nov 24 15:52:09 2023 -0500
+
+    updates on ds
+
+[33mcommit 734dc392a5aed796d4d953e21e8c1827bf2baa22[m
+Author: Grace Wang <70417984+gracwng@users.noreply.github.com>
+Date:   Fri Nov 24 14:38:32 2023 -0500
+
+    added folds 6-10
+
+[33mcommit cdba4b69d1451cd237c9b6b525d1d9fee24ba454[m
+Author: Grace Wang <70417984+gracwng@users.noreply.github.com>
+Date:   Fri Nov 24 14:24:08 2023 -0500
+
+    Update .DS_Store
+
+[33mcommit 4d7d9e5f732e570ebb5dec725cbfda75ebed1f9c[m
+Author: Grace Wang <70417984+gracwng@users.noreply.github.com>
+Date:   Fri Nov 24 14:24:06 2023 -0500
+
+    updated training folders
+
+[33mcommit bcd81c700c667c44b80cb31a917cefce9db95613[m
+Author: Grace Wang <70417984+gracwng@users.noreply.github.com>
+Date:   Fri Nov 24 14:21:08 2023 -0500
+
+    Update .DS_Store
+
+[33mcommit 7f1fd9d58dafe00703d7b5348620b0d58163ce75[m
+Author: Grace Wang <70417984+gracwng@users.noreply.github.com>
+Date:   Fri Nov 24 14:21:06 2023 -0500
+
+    updated testing folder
+
+[33mcommit b46b0df590b5bd3024d6a2b4091436f8af1cc7f4[m
+Author: Grace Wang <70417984+gracwng@users.noreply.github.com>
+Date:   Fri Nov 24 14:15:03 2023 -0500
+
+    creating new folds
+
+[33mcommit 05f0b80b19ee8658c3bd60463ee2e5df5c5548c9[m
+Author: Grace Wang <70417984+gracwng@users.noreply.github.com>
+Date:   Fri Nov 24 13:31:42 2023 -0500
+
+    Update .DS_Store
+
+[33mcommit e4b9e9b810f135072fe07d48578d981e98723216[m
+Author: Grace Wang <70417984+gracwng@users.noreply.github.com>
+Date:   Fri Nov 24 13:31:40 2023 -0500
+
+    k fold update
+
+[33mcommit 77465b01d62cfa49f8308ccdea2ee3011eede88d[m
+Author: Grace Wang <70417984+gracwng@users.noreply.github.com>
+Date:   Fri Nov 24 13:26:32 2023 -0500
+
+    Update .DS_Store
+
+[33mcommit 72b556ec7a19df992ae69c58e4fd74b7d294033a[m
+Author: Grace Wang <70417984+gracwng@users.noreply.github.com>
+Date:   Fri Nov 24 13:24:35 2023 -0500
+
+    k fold algo
+
+[33mcommit cd5eccdb10069b94b12c22c9d43e4fa88086e022[m
+Author: Grace Wang <70417984+gracwng@users.noreply.github.com>
+Date:   Wed Nov 22 22:34:16 2023 -0500
+
+    k fold algo complete, just testing
+
+[33mcommit edfe2613cf3d3a9b939f7d97c6e54c45a1e5ed49[m
+Author: Grace Wang <70417984+gracwng@users.noreply.github.com>
+Date:   Wed Nov 22 21:56:10 2023 -0500
+
+    Update .DS_Store
+
+[33mcommit b312d06ac792f8dae61dc6b4c08126b21945bbbf[m
+Author: Grace Wang <70417984+gracwng@users.noreply.github.com>
+Date:   Wed Nov 22 21:56:04 2023 -0500
+
+    reorganized kfold folder
+    
+    You can update your file naming convention to make it compatible with Keras. For example, you could have folders named "Healthy" and "Hearing_Impaired," and within those folders, you have images named something like "subject_036_topographic_map_millisecond_00ms_sub-036.png." This way, Keras can infer the class labels from the folder names.
+
+[33mcommit 16d4c1b44654320c6be7e4d67724b8eb85265e3b[m
+Author: Grace Wang <70417984+gracwng@users.noreply.github.com>
+Date:   Wed Nov 22 19:30:50 2023 -0500
+
+    restored CNN notebook
+    
+    I LOVE GITHUB!
+
+[33mcommit 6b359b09fe095bacf4f9bcadbaac2a079652466f[m
+Author: Grace Wang <70417984+gracwng@users.noreply.github.com>
+Date:   Wed Nov 22 19:16:28 2023 -0500
+
+    Update .DS_Store
+
+[33mcommit 044b96d1bebdbaa362ff5900df12b473e2c4c97f[m
+Author: Grace Wang <70417984+gracwng@users.noreply.github.com>
+Date:   Wed Nov 22 19:16:25 2023 -0500
+
+    labeled and created training sets for 5 folds
+
+[33mcommit 614ebed3be0ee299ca01615bf6896fc5166ec803[m
+Author: Grace Wang <70417984+gracwng@users.noreply.github.com>
+Date:   Wed Nov 22 19:00:40 2023 -0500
+
+    created test set for k fold WITH LABELS
+
+[33mcommit 02262419e150400d918b1c06591eb99fac8c430b[m
+Author: Grace Wang <70417984+gracwng@users.noreply.github.com>
+Date:   Wed Nov 22 18:42:36 2023 -0500
+
+    udpated script
+
+[33mcommit 5b6297576d24e8838e91f2d76d6e4e5678cd6127[m
+Author: Grace Wang <70417984+gracwng@users.noreply.github.com>
+Date:   Wed Nov 22 18:33:44 2023 -0500
+
+    created test sets for all 5 folds
+
+[33mcommit abd168b35ba692fd17d98b63979ab75fb8bb32e8[m
+Author: Grace Wang <70417984+gracwng@users.noreply.github.com>
+Date:   Wed Nov 22 18:15:03 2023 -0500
+
+    Update .DS_Store
+
+[33mcommit b5c5c9b8a0060325aca3e108f571afffb8192cef[m
+Author: Grace Wang <70417984+gracwng@users.noreply.github.com>
+Date:   Wed Nov 22 18:15:01 2023 -0500
+
+    working on k fold algo
+
+[33mcommit e412793d1fbda5328adbf2e25fca55009b8ca8f3[m
+Author: Grace Wang <70417984+gracwng@users.noreply.github.com>
+Date:   Wed Nov 22 09:49:34 2023 -0500
+
+    Update KFold.ipynb
+    
+    k fold for 2 healthy and 2 unhealthy test subjects
+
+[33mcommit 2212f5b21cdbaafbb9060991d65a2150dcb76462[m
+Author: Grace Wang <70417984+gracwng@users.noreply.github.com>
+Date:   Wed Nov 22 09:48:43 2023 -0500
+
+    kfold with 3 test subjects each fold
+
+[33mcommit b26f1690194b6777a4c6ef0a8515e70b9453c8c1[m
+Author: Grace Wang <70417984+gracwng@users.noreply.github.com>
+Date:   Tue Nov 21 19:59:14 2023 -0500
+
+    Update KFold.ipynb
+    
+    validate included
+
+[33mcommit f86b82e56d22e199d1936ced88bdf465db721ffb[m
+Author: Grace Wang <70417984+gracwng@users.noreply.github.com>
+Date:   Tue Nov 21 10:47:22 2023 -0500
+
+    Defined CNN model outside loop
+
+[33mcommit 834b46f98516be8649ab4d1b4f6adb41f436e858[m
+Author: Grace Wang <70417984+gracwng@users.noreply.github.com>
+Date:   Tue Nov 21 10:44:10 2023 -0500
+
+    Update KFold.ipynb
+
+[33mcommit a78a9fe7386e5dbdddae44f772e6b152a73f86bc[m
+Author: Grace Wang <70417984+gracwng@users.noreply.github.com>
+Date:   Tue Nov 21 10:22:18 2023 -0500
+
+    working on kfold
+
+[33mcommit 0111c0d69971b001742624d4400fc3568735336f[m
+Author: Grace Wang <70417984+gracwng@users.noreply.github.com>
+Date:   Mon Nov 20 20:53:44 2023 -0500
+
+    data split by subject
+    
+    for the 70-15-15 split folder. The healthy and hearing imparied folders got deleted on accident. I realized I was moving the images, not creating copies. But I fixed tha tnow
+
+[33mcommit b4bb065663f5be39ee0360e1831e6a4c5e60f994[m
+Author: Grace Wang <70417984+gracwng@users.noreply.github.com>
+Date:   Mon Nov 20 20:42:36 2023 -0500
+
+    wrong version
+
+[33mcommit a3bdfa2869f7093342dffa08e7b6bf8a3b1b387f[m
+Author: Grace Wang <70417984+gracwng@users.noreply.github.com>
+Date:   Mon Nov 20 20:35:10 2023 -0500
+
+    data split by subject
+
+[33mcommit ce1caacd66ce5b357b4850fedf0b305595182168[m
+Author: Grace Wang <70417984+gracwng@users.noreply.github.com>
+Date:   Sat Sep 16 15:15:49 2023 -0400
+
+    final research paper
+
+[33mcommit 6233256b3253a72d26e1a03134061902dd0a3fa9[m
+Merge: c8f9cc4 e0390be
+Author: Grace Wang <70417984+gracwng@users.noreply.github.com>
+Date:   Thu Aug 3 13:22:37 2023 -0700
+
+    Merge branch 'main' of https://github.com/gracwng/REU-Hearing-Loss-Project
+
+[33mcommit c8f9cc4d7c9dba4bab8cd22438e96aab3eb45b26[m
+Author: Grace Wang <70417984+gracwng@users.noreply.github.com>
+Date:   Thu Aug 3 13:22:22 2023 -0700
+
+    update cnn notebook
+
+[33mcommit e0390be3be5a32399b95425aec7cc301366ce54e[m
+Author: Grace Wang <70417984+gracwng@users.noreply.github.com>
+Date:   Thu Aug 3 11:55:42 2023 -0700
+
+    Update Procedure.md
+
+[33mcommit ee909a6fc06971930b2339e013fdfc65abd28016[m
+Merge: 257f526 f924b02
+Author: Grace Wang <70417984+gracwng@users.noreply.github.com>
+Date:   Thu Aug 3 11:54:54 2023 -0700
+
+    Merge branch 'main' of https://github.com/gracwng/REU-Hearing-Loss-Project
+
+[33mcommit 257f526d3e4cd15539c376b8bfc2906acf5971a8[m
+Author: Grace Wang <70417984+gracwng@users.noreply.github.com>
+Date:   Thu Aug 3 11:54:52 2023 -0700
+
+    update paper
+
+[33mcommit f924b022492e56c8dea239f117a6b48d51f20347[m
+Author: Grace Wang <70417984+gracwng@users.noreply.github.com>
+Date:   Wed Aug 2 15:03:18 2023 -0700
+
+    Update Procedure.md
+
+[33mcommit e796c2a52aabe387a6b818cb94155d0506fca66f[m
+Author: Grace Wang <70417984+gracwng@users.noreply.github.com>
+Date:   Wed Aug 2 15:01:41 2023 -0700
+
+    ml folder rename
+
+[33mcommit 4f2efeabeca25e66c0a411d74596e9f3a37f1e07[m
+Author: Grace Wang <70417984+gracwng@users.noreply.github.com>
+Date:   Wed Aug 2 14:55:06 2023 -0700
+
+    Update and rename Procedure to Procedure.md
+
+[33mcommit d7306f66cbc5af7bd9fef42e3dddfb2c2ad89daf[m
+Author: Grace Wang <70417984+gracwng@users.noreply.github.com>
+Date:   Wed Aug 2 14:50:41 2023 -0700
+
+    Create Procedure to replicate project
+
+[33mcommit 1052dba032154f2d76f1feeb3dfccf29829c9d68[m
+Author: Grace Wang <70417984+gracwng@users.noreply.github.com>
+Date:   Wed Aug 2 14:25:11 2023 -0700
+
+    Update README.md
+
+[33mcommit 757513f4808969732ac48da737db2c8c27bc057e[m
+Merge: 30619cc 2a34106
+Author: Grace Wang <70417984+gracwng@users.noreply.github.com>
+Date:   Wed Aug 2 14:24:52 2023 -0700
+
+    Merge branch 'main' of https://github.com/gracwng/REU-Hearing-Loss-Project
+
+[33mcommit 30619cccde66bff091aceabd6beb8517244091a5[m
+Author: Grace Wang <70417984+gracwng@users.noreply.github.com>
+Date:   Wed Aug 2 14:24:40 2023 -0700
+
+    moved cnn image
+
+[33mcommit 2a341060e1f13ef081a9f736e48eef8fdc2dab89[m
+Author: Grace Wang <70417984+gracwng@users.noreply.github.com>
+Date:   Wed Aug 2 14:24:14 2023 -0700
+
+    Update README.md
+
+[33mcommit 7b8b262ce8aeb27a8cba9650a48a9bf41c576aed[m
+Merge: daa0eb4 6f8f3aa
+Author: Grace Wang <70417984+gracwng@users.noreply.github.com>
+Date:   Wed Aug 2 14:22:11 2023 -0700
+
+    Merge branch 'main' of https://github.com/gracwng/REU-Hearing-Loss-Project
+
+[33mcommit daa0eb4b17d65a5f0a39c600571dad1634f45e21[m
+Author: Grace Wang <70417984+gracwng@users.noreply.github.com>
+Date:   Wed Aug 2 14:22:02 2023 -0700
+
+    added matlab files and moved cnn architecture image
+
+[33mcommit 6f8f3aaca2655e89d32a6862e5d67123b995f97f[m
+Author: Grace Wang <70417984+gracwng@users.noreply.github.com>
+Date:   Wed Aug 2 14:21:06 2023 -0700
+
+    Update README.md
+
+[33mcommit 4765e0d9117f4c6d271c0c2260315d43b7cb9e2d[m
+Author: Grace Wang <70417984+gracwng@users.noreply.github.com>
+Date:   Wed Aug 2 14:11:33 2023 -0700
+
+    Update README.md
+
+[33mcommit 21f3575fa39f501da08a19d7add586bed7d54df9[m
+Author: Grace Wang <70417984+gracwng@users.noreply.github.com>
+Date:   Wed Aug 2 14:10:43 2023 -0700
+
+    Update README.md
+
+[33mcommit 3993b492339fad19401995936fc024433c1516c1[m
+Author: Grace Wang <70417984+gracwng@users.noreply.github.com>
+Date:   Wed Aug 2 13:20:51 2023 -0700
+
+    Update README.md
+
+[33mcommit 257dec8501af157320126923ca1ca47ef9c1ea65[m
+Author: Grace Wang <70417984+gracwng@users.noreply.github.com>
+Date:   Wed Aug 2 13:18:26 2023 -0700
+
+    Update README.md
+
+[33mcommit 14cd0cd56d935ece6c0c94bef6ba1457067b4302[m
+Merge: 83f0d08 9769765
+Author: Grace Wang <70417984+gracwng@users.noreply.github.com>
+Date:   Wed Aug 2 13:12:30 2023 -0700
+
+    Merge branch 'main' of https://github.com/gracwng/REU-Hearing-Loss-Project
+
+[33mcommit 83f0d0858fd6dab1c218100d85759dc02f4f23f4[m
+Author: Grace Wang <70417984+gracwng@users.noreply.github.com>
+Date:   Wed Aug 2 13:11:39 2023 -0700
+
+    Create .DS_Store
+
+[33mcommit 04b5b99ab4594e54ef4dbe05dc7bc77c715a9b39[m
+Author: Grace Wang <70417984+gracwng@users.noreply.github.com>
+Date:   Wed Aug 2 13:11:34 2023 -0700
+
+    images
+
+[33mcommit 976976502c4c25c0eddce84a1cec1cde283c9710[m
+Author: Grace Wang <70417984+gracwng@users.noreply.github.com>
+Date:   Wed Aug 2 12:46:09 2023 -0700
+
+    Create README.md
+
+[33mcommit 8c85df41728ff6b275957c6c3bf6195370cc57dc[m
+Author: Grace Wang <70417984+gracwng@users.noreply.github.com>
+Date:   Wed Aug 2 12:41:37 2023 -0700
+
+    final poster upload
+
+[33mcommit bdc7d76a8556bbd20f5ef0559146c93d8ba2671c[m
+Author: Grace Wang <70417984+gracwng@users.noreply.github.com>
+Date:   Fri Jul 28 13:51:40 2023 -0700
+
+    update paper draft
+
+[33mcommit 8064dea6ae485649c8221f9a2f1493cca486f538[m
+Author: Grace Wang <70417984+gracwng@users.noreply.github.com>
+Date:   Fri Jul 28 13:17:22 2023 -0700
+
+    reorganize folders
+
+[33mcommit 5a105c22f126c2d58e181421e3df8ecfae30f1d0[m
+Author: Grace Wang <70417984+gracwng@users.noreply.github.com>
+Date:   Fri Jul 28 13:15:17 2023 -0700
+
+    poster v2
+
+[33mcommit 5ca6e75889ff1e863ee0d5196a630c416e75419a[m
+Author: Grace Wang <70417984+gracwng@users.noreply.github.com>
+Date:   Fri Jul 28 13:14:13 2023 -0700
+
+    paper version1
+
+[33mcommit b302f274685297e59a373b04acb9f556413cce4c[m
+Author: Grace Wang <70417984+gracwng@users.noreply.github.com>
+Date:   Fri Jul 28 12:48:33 2023 -0700
+
+    research poster v2
+
+[33mcommit be8f09c8a7356a1ac52c4d375c505f3adb338a40[m
+Author: Grace Wang <70417984+gracwng@users.noreply.github.com>
+Date:   Wed Jul 26 16:25:59 2023 -0700
+
+    testing more CNN models
+
+[33mcommit f5b90b481d8ba9425994b159a3478d527f9eec03[m
+Author: Grace Wang <70417984+gracwng@users.noreply.github.com>
+Date:   Thu Jul 20 15:28:29 2023 -0700
+
+    New CNN model. Great accuracy!
+    
+    The problem was I was using a pretrained CNN model on natural images which messed with my data's accuracy. I used a CNN model from tensorflow that was created from scratch and then tested my dataset (1,780 images total. each patient had 40 images) whoop whoop
+
+[33mcommit dcf1647778fecb09b42a8491747a222e2a3e488d[m
+Author: Grace Wang <70417984+gracwng@users.noreply.github.com>
+Date:   Thu Jul 20 10:42:22 2023 -0700
+
+    Extract topo maps for each 10 ms interval
+    
+    extract all erp file contains script to extract the topography maps for each 10 ms interval from 0 - 400 ms on the ERP waveform so we have a bigger dataset to work with when training CNN
+
+[33mcommit 43e0ef68d2319fa2865e8b5a90f3a6e4a421ae7e[m
+Author: Grace Wang <70417984+gracwng@users.noreply.github.com>
+Date:   Thu Jul 13 14:30:36 2023 -0700
+
+    reuploaded correct images
+
+[33mcommit 5653d936222f9d37bd6b2d6262aebaa8ba48b7bc[m
+Author: Grace Wang <70417984+gracwng@users.noreply.github.com>
+Date:   Thu Jul 13 14:20:33 2023 -0700
+
+    backup images and new Resnet50 models
+
+[33mcommit 4d16335122c71deaec5d8324a077691f2414f860[m
+Author: Grace Wang <70417984+gracwng@users.noreply.github.com>
+Date:   Mon Jul 10 12:17:11 2023 -0700
+
+    CNN model
+    
+    accuracy currently 50%
+
+[33mcommit b5f177fce0b4f7eb945c6fc74272894009675dcf[m
+Author: Grace Wang <70417984+gracwng@users.noreply.github.com>
+Date:   Fri Jul 7 12:50:49 2023 -0700
+
+    ERP related files only
+
+[33mcommit b5e339801a4396e50a0756de3869a686faa6ee30[m
+Author: Grace Wang <70417984+gracwng@users.noreply.github.com>
+Date:   Fri Jun 30 12:19:48 2023 -0700
+
+    Initial commit
+
+[33mcommit 587843d17bc529d4e1aadb7547c8ec8e645d9b6e[m
+Author: Grace Wang <70417984+gracwng@users.noreply.github.com>
+Date:   Fri Jun 30 11:27:46 2023 -0700
+
+    first commit
