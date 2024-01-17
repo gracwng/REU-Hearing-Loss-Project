@@ -3,3 +3,5 @@ machine\ learning/checkpoint\ results/10\ folds\ 80_20\ split/model/*.h5
 
 machine learning/checkpoint results/10 folds 80_20 split/independentModel/model/*.h5
 machine learning/checkpoint results/10 folds 80_20 split/dependentModel/model/*.h5
+
+machine learning/checkpoint results/10folds - 80-20 train test split (includes all subjects)/model/*h5
