@@ -9,3 +9,5 @@ machine learning/checkpoint results/10folds - 80-20 train test split (includes a
 
 machine learning/checkpoint results/10folds - 80-20 train test split (includes all subjects)/dependent Model/model/*h5
 machine learning/checkpoint results/10folds - 80-20 train test split (includes all subjects)/dependent Model/model 2/*h5
+machine learning/checkpoint results/10folds - 80-20 train test split (includes all subjects)/independent model/30 epochs/model/*h5
+machine learning/checkpoint results/10folds - 80-20 train test split (includes all subjects)/independent model/model/*h5
