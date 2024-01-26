@@ -22,3 +22,4 @@ machine learning/checkpoint results/10folds - 80-20 train test split (includes a
 machine learning/checkpoint results/10folds - 80-20 train test split (includes all subjects)/experiments/apply weight decay/model/*h5
 machine learning/checkpoint results/10folds - 80-20 train test split (includes all subjects)/experiments/data augmentation/model/*h5
 machine learning/checkpoint results/10folds - 80-20 train test split (includes all subjects)/experiments/100epochsDataAugLRScheduler/model/*h5
+machine learning/finalPush/10Fold/model/*h5
