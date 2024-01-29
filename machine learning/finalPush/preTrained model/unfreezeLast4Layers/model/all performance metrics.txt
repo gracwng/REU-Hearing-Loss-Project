@@ -1,0 +1,59 @@
+Fold 1:
+Test Accuracy: 0.53125
+Precision: 0.47948717948717956
+Recall: 0.4875
+F1 Score: 0.4320346320346321
+
+Fold 2:
+Test Accuracy: 0.5
+Precision: 0.25
+Recall: 0.5
+F1 Score: 0.3333333333333333
+
+Fold 3:
+Test Accuracy: 0.45625001192092896
+Precision: 0.4742101869761445
+Recall: 0.475
+F1 Score: 0.4709494567784601
+
+Fold 4:
+Test Accuracy: 0.5531250238418579
+Precision: 0.5301015928759563
+Recall: 0.528125
+F1 Score: 0.5202494067653571
+
+Fold 5:
+Test Accuracy: 0.512499988079071
+Precision: 0.5166666666666666
+Recall: 0.5125
+F1 Score: 0.48
+
+Fold 6:
+Test Accuracy: 0.546875
+Precision: 0.4935353535353535
+Recall: 0.496875
+F1 Score: 0.4222596019063639
+
+Fold 7:
+Test Accuracy: 0.6312500238418579
+Precision: 0.4783549783549784
+Recall: 0.4875
+F1 Score: 0.426974143955276
+
+Fold 8:
+Test Accuracy: 0.46562498807907104
+Precision: 0.5094581280788177
+Recall: 0.509375
+F1 Score: 0.508294592610717
+
+Fold 9:
+Test Accuracy: 0.53125
+Precision: 0.6548387096774194
+Recall: 0.51875
+F1 Score: 0.3832290362953692
+
+Fold 10:
+Test Accuracy: 0.559374988079071
+Precision: 0.47565111526588116
+Recall: 0.478125
+F1 Score: 0.46452369262217064
