@@ -1,0 +1,56 @@
+[NbConvertApp] WARNING | Config option `start_directory` not recognized by `ExecutePreprocessor`.
+[NbConvertApp] WARNING | Config option `cell_index` not recognized by `ExecutePreprocessor`.
+[NbConvertApp] WARNING | Config option `cell_indices` not recognized by `ExecutePreprocessor`.
+[NbConvertApp] Converting notebook /home/wangg/REU-Hearing-Loss-Project-1/machine learning/terminalNotebook.ipynb to notebook
+[NbConvertApp] WARNING | Config option `start_directory` not recognized by `ExecutePreprocessor`.
+[NbConvertApp] WARNING | Config option `cell_index` not recognized by `ExecutePreprocessor`.
+[NbConvertApp] WARNING | Config option `cell_indices` not recognized by `ExecutePreprocessor`.
+2024-01-28 10:49:15.035370: I tensorflow/core/util/port.cc:113] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2024-01-28 10:49:15.042108: I external/local_tsl/tsl/cuda/cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.
+2024-01-28 10:49:15.294785: E external/local_xla/xla/stream_executor/cuda/cuda_dnn.cc:9261] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2024-01-28 10:49:15.294831: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:607] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2024-01-28 10:49:15.296332: E external/local_xla/xla/stream_executor/cuda/cuda_blas.cc:1515] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2024-01-28 10:49:15.337841: I external/local_tsl/tsl/cuda/cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.
+2024-01-28 10:49:15.339850: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2024-01-28 10:49:19.535111: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+2024-01-28 10:49:22.476016: W tensorflow/core/common_runtime/gpu/gpu_device.cc:2256] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+[IPKernelApp] WARNING | Parent appears to have exited, shutting down.
+[NbConvertApp] WARNING | Config option `start_directory` not recognized by `ExecutePreprocessor`.
+[NbConvertApp] WARNING | Config option `cell_index` not recognized by `ExecutePreprocessor`.
+[NbConvertApp] WARNING | Config option `cell_indices` not recognized by `ExecutePreprocessor`.
+[NbConvertApp] Converting notebook /home/wangg/REU-Hearing-Loss-Project-1/machine learning/terminalNotebook.ipynb to notebook
+[NbConvertApp] WARNING | Config option `start_directory` not recognized by `ExecutePreprocessor`.
+[NbConvertApp] WARNING | Config option `cell_index` not recognized by `ExecutePreprocessor`.
+[NbConvertApp] WARNING | Config option `cell_indices` not recognized by `ExecutePreprocessor`.
+2024-01-28 10:55:59.248165: I tensorflow/core/util/port.cc:113] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2024-01-28 10:55:59.253866: I external/local_tsl/tsl/cuda/cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.
+2024-01-28 10:55:59.349113: E external/local_xla/xla/stream_executor/cuda/cuda_dnn.cc:9261] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2024-01-28 10:55:59.349307: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:607] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2024-01-28 10:55:59.352017: E external/local_xla/xla/stream_executor/cuda/cuda_blas.cc:1515] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2024-01-28 10:55:59.366783: I external/local_tsl/tsl/cuda/cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.
+2024-01-28 10:55:59.372273: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2024-01-28 10:56:01.385779: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+2024-01-28 10:56:03.153482: W tensorflow/core/common_runtime/gpu/gpu_device.cc:2256] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+[IPKernelApp] WARNING | Parent appears to have exited, shutting down.
+[NbConvertApp] WARNING | Config option `start_directory` not recognized by `ExecutePreprocessor`.
+[NbConvertApp] WARNING | Config option `cell_index` not recognized by `ExecutePreprocessor`.
+[NbConvertApp] WARNING | Config option `cell_indices` not recognized by `ExecutePreprocessor`.
+[NbConvertApp] Converting notebook /home/wangg/REU-Hearing-Loss-Project-1/machine learning/terminalNotebook.ipynb to notebook
+[NbConvertApp] WARNING | Config option `start_directory` not recognized by `ExecutePreprocessor`.
+[NbConvertApp] WARNING | Config option `cell_index` not recognized by `ExecutePreprocessor`.
+[NbConvertApp] WARNING | Config option `cell_indices` not recognized by `ExecutePreprocessor`.
+2024-01-28 10:58:50.522522: I tensorflow/core/util/port.cc:113] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2024-01-28 10:58:50.528493: I external/local_tsl/tsl/cuda/cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.
+2024-01-28 10:58:50.622286: E external/local_xla/xla/stream_executor/cuda/cuda_dnn.cc:9261] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2024-01-28 10:58:50.622362: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:607] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2024-01-28 10:58:50.625246: E external/local_xla/xla/stream_executor/cuda/cuda_blas.cc:1515] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2024-01-28 10:58:50.644307: I external/local_tsl/tsl/cuda/cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.
+2024-01-28 10:58:50.645154: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2024-01-28 10:58:52.514737: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+2024-01-28 10:58:54.190546: W tensorflow/core/common_runtime/gpu/gpu_device.cc:2256] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
