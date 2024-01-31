@@ -30,7 +30,6 @@ for subid = 1 : 44
     fname = fullfile(sdir,'features','eeg',sprintf('sub-%0.3i_eeg-%s.mat',subid,pipeline_erp.sname));
     load(fname);
         
-    
     % take the data from all trials, and concatenate accross third
     % dimension. 
     erp_subid         = mean(cat(3,dat.trial{:}),3)';
